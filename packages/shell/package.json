@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "serve-dist": "http-server ./dist --P http://127.0.0.1:8888"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",

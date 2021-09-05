@@ -8,7 +8,7 @@ Vue.use(BootstrapVueIcons);
 Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false;
-Vue.config.ignoredElements = [/^widget/];
+Vue.config.ignoredElements = [/^widget/, /^my/];
 
 new Vue({
   render: h => h(App),

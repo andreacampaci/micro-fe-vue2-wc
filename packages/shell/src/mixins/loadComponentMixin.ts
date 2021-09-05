@@ -8,7 +8,8 @@ export class LoadComponentMixin extends Vue {
         this.appsUrl.forEach(appUrl => {
             if (!(window as any).appsRegisterd.includes(appUrl)) {
                 const node = document.createElement('script');
-                node.src = `apps/${appUrl}/${appUrl}.min.js?v=8`;
+                const timestamp = Math.floor(Date.now() / 1000);
+                node.src = `apps/${appUrl}/${appUrl}.min.js?v=${timestamp}`;
                 node.type = "text/javascript";
                 document
                     .querySelector('html>head')
