@@ -5,6 +5,7 @@
     "lerna": "^3.20.2"
   },
   "scripts": {
-    "serve-micro-app": "http-server ./cdn --p 8888"
+    "serve-micro-app": "http-server ./cdn --p 8888",
+    "bootstrap": "lerna bootstrap --hoist"
   }
 }
