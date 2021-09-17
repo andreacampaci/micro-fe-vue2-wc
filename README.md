@@ -1,1 +1,1 @@
-# meetup-presentation-micro-fe-vue2-wc
+# codemotion-workshop-micro-fe-vue2-wc
