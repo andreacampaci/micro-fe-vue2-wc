@@ -4,19 +4,20 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build-wc": "vue-cli-service build --target wc --name my-component-demo './src/App.vue' --inline-vue",
-    "deploy-micro-apps": "mv ./dist ../../cdn/apps/my-component-demo"
+    "build-app": "vue-cli-service build --target wc --name my-component-demo './src/App.vue' --inline-vue",
+    "deploy-app": "mkdir -p ../../cdn/apps/my-component-demo && rm -rf ../../cdn/apps/my-component-demo && mv ./dist ../../cdn/apps/my-component-demo"
   },
   "dependencies": {
     "apexcharts": "^3.25.0",
-    "vue-apexcharts": "^1.6.0",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.3",
     "core-js": "^3.6.5",
     "http-server": "^0.11.1",
     "postcss-cssnext": "^3.1.0",
     "register-service-worker": "^1.6.2",
+    "rxjs": "^6.6.7",
     "vue": "^2.6.11",
+    "vue-apexcharts": "^1.6.0",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.1.2",
     "vue-router": "^3.0.1",
