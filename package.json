@@ -2,10 +2,11 @@
   "name": "fe-wc-microfe-vue",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.20.2"
+    "lerna": "^4.0.0"
   },
   "scripts": {
-    "serve-micro-app": "http-server ./cdn --p 8888",
-    "bootstrap": "lerna bootstrap --hoist"
+    "bootstrap": "lerna bootstrap",
+    "serve-cdn": "npx http-server ./cdn --p 8888",
+    "new-component": "hygen generator new"
   }
 }

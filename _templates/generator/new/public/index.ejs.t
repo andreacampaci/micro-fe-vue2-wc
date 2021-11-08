@@ -1,0 +1,33 @@
+---
+to: packages/my-component-<%= name %>/public/index.html
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico">
+    <title>vue</title>
+    <style>
+      :root {
+        --foo-border-radius: 10px;
+        --foo-color-primary: #666;
+        --foo-color-secondary: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  <script>
+    document.getElementsByTagName('body')[0].addEventListener('foo-vue-select', function (payload) {
+      console.log(payload);
+      alert(JSON.stringify(payload.detail));
+    })
+  </script>
+  </body>
+</html>
