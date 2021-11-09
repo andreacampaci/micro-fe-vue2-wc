@@ -15,7 +15,7 @@ npm i -g lerna@4.0.0
 Una volta installato poi procedere con l'installazione dei moduli usando Lerna.
 
 ```shell
-npm run bootrap
+npm run bootstrap
 ```
 > Per problemi legati alla vue cli per questo progetto non è possibile usare --hoist sul comando Lerna bootstrao
 
