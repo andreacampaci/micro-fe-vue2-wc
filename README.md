@@ -25,7 +25,7 @@ Comando per creare una nuova micro applicazione
 ```shell
 npm run new-component -- {{componentName}}
 ```
-Una volta eseguito con successo rilanciare `npm run bootrap`
+Una volta eseguito con successo rilanciare `npm run bootstrap`
 #### Serve a micro app CDN
 
 ```shell
